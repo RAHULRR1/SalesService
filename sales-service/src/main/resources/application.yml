@@ -1,0 +1,19 @@
+spring:
+  r2dbc:
+    url: your-database-url
+    username: your-postgres-username
+    password: your-postgres-password
+    properties:
+      schema: your-schema-name
+
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri:  your-okta-uri
+
+
+server:
+  port: 8081
+
